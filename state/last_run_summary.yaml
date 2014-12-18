@@ -1,0 +1,6 @@
+--- 
+  version: 
+    config: 
+    puppet: "3.7.3"
+  time: 
+    last_run: 1418133231

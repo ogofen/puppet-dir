@@ -1,0 +1,145 @@
+--- !ruby/object:Puppet::Node::Facts
+  name: dhcp-2-51.tlv.redhat.com
+  values: 
+    blockdevice_sdh_vendor: DGC
+    bios_release_date: "09/01/2011"
+    lsbrelease: ":base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch"
+    network__vdsmdummy_: "127.0.0.0"
+    macaddress_rhevm: "00:25:64:B2:85:E5"
+    processorcount: "2"
+    rubysitedir: /usr/lib/ruby/site_ruby/1.8
+    blockdevice_sdu_vendor: DGC
+    memorysize: "3.62 GB"
+    bios_version: A10
+    timezone: IST
+    blockdevice_sda_size: "250000000000"
+    sshrsakey: "AAAAB3NzaC1yc2EAAAABIwAAAQEAyPKzOVvrQBI4DIgMR2shffiVJ8Y1O6c6CojS06cefFdF5gKnMoHvLvjWX58EVOIID3gtT+p0olp4io3RtDwH41bmbL2p/qBWyO/gpOINI0vrIozyLF/eQaQs+v7yesrsEMFK7GCdVI9/cdTbLLV9QGkzBuCdkhyIGUWWGc0NWMUiVvj7tT/hhy+AlIMb9teNRS2u8sVUY2jfY1GoHfWlEFsxn5QkaYOLYTfZO0Zo90eDkXMj0KyeYxPbCX8GQoQ7j+XAh8ew+YOt1Uq4xMFiiYV8p4U+0kUnXHzStenMhV7ONTXlBmsqnyt7IPJH3KMQ20i6vz466BPCQeL8Aml0nw=="
+    blockdevice_sdn_size: "21474836480"
+    selinux_policyversion: "24"
+    network_rhevm: "10.35.2.0"
+    blockdevice_sdo_vendor: DGC
+    blockdevice_sda_model: ST3250318AS
+    blockdevice_sdt_size: "21474836480"
+    clientnoop: "false"
+    hostname: dhcp-2-51
+    gid: root
+    ipaddress: "10.35.2.51"
+    processor1: "Intel(R) Core(TM)2 Duo CPU     E7500  @ 2.93GHz"
+    netmask__vdsmdummy_: "255.0.0.0"
+    rubyversion: "1.8.7"
+    boardmanufacturer: "Dell Inc."
+    swapfree_mb: "16000.00"
+    lsbmajdistrelease: "6"
+    uptime_days: "8"
+    sshfp_dsa: |-
+      SSHFP 2 1 2f308ce7e73bdd51ee83d4a5ecbc500199c1aa12
+      SSHFP 2 2 2139b613f7e5396b9dd6adb9751d372593bdec64f3f653bea20f8030a066000b
+    augeasversion: "1.0.0"
+    bios_vendor: "Dell Inc."
+    network_lo: "127.0.0.0"
+    ipaddress_lo: "127.0.0.1"
+    blockdevice_sdo_model: VRAID
+    clientcert: dhcp-2-51.tlv.redhat.com
+    lsbminordistrelease: "5"
+    memoryfree: "3.11 GB"
+    blockdevice_sdo_size: "64424509440"
+    swapsize_mb: "16000.00"
+    macaddress_bond0: "00:00:00:00:00:00"
+    blockdevice_sdp_size: "64424509440"
+    lsbdistcodename: Santiago
+    keepalived_host_ip: "10.35.2.51"
+    mtu_eth0: "1500"
+    osfamily: RedHat
+    path: "/usr/bin:/sbin:/bin:/usr/sbin"
+    operatingsystemrelease: "6.5"
+    uuid: "44454C4C-4400-104B-8044-B2C04F4D344A"
+    os: "familyRedHatreleaseminor5major6full6.5nameRedHatlsbdistrelease6.5distdescriptionRed Hat Enterprise Linux Server release 6.5 (Santiago)distidRedHatEnterpriseServermajdistrelease6distcodenameSantiagominordistrelease5release:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch"
+    productname: "OptiPlex 780"
+    hardwareisa: x86_64
+    blockdevice_sdp_model: VRAID
+    lsbdistdescription: "Red Hat Enterprise Linux Server release 6.5 (Santiago)"
+    puppetversion: "3.7.3"
+    virtual: physical
+    kernelmajversion: "2.6"
+    serialnumber: "2DKDM4J"
+    physicalprocessorcount: "1"
+    mtu_lo: "16436"
+    domain: tlv.redhat.com
+    partitions: sda1mount/bootuuidcbe852d8-8b0e-4f47-b91a-1a6f1946c0e3filesystemext4size1024000sda2filesystemLVM2_membersize487254016
+    processors: "physicalcount1count2modelsIntel(R) Core(TM)2 Duo CPU     E7500  @ 2.93GHzIntel(R) Core(TM)2 Duo CPU     E7500  @ 2.93GHz"
+    mtu_bond0: "1500"
+    blockdevice_sdv_model: VRAID
+    netmask: "255.255.254.0"
+    type: "Mini Tower"
+    blockdevice_sdu_model: VRAID
+    operatingsystem: RedHat
+    keepalived_simple_password: da39a3ee5e6b4b0d3255bfef95601890afd80709
+    ipaddress_rhevm: "10.35.2.51"
+    is_virtual: "false"
+    blockdevice_sdn_model: VRAID
+    selinux_config_policy: targeted
+    swapsize: "15.62 GB"
+    fqdn: dhcp-2-51.tlv.redhat.com
+    boardproductname: "0C27VV"
+    blockdevice_sdu_size: "64424509440"
+    lsbdistrelease: "6.5"
+    blockdevice_sdj_vendor: DGC
+    selinux: "true"
+    mtu_rhevm: "1500"
+    system_uptime: "uptime8 dayshours192seconds691382days8"
+    blockdevice_sdj_size: "64424509440"
+    kernel: Linux
+    blockdevice_sdn_vendor: DGC
+    sshdsakey: "AAAAB3NzaC1kc3MAAACBAOMEyJ6NRI2xfvk4NPJ8ua51hTL7QVvMDn5oTfnw8XDgPS0yHW29TSOiTN+ziELZARiMd37uVKvtJudqKxDf4pS7d0pbXPFZ3p84NW1hxFlXGW0ThfwjczPX0Z/2UXAD0bbXea+c6bjrXkAcHNGZ3yOt2i47TXi6qXzivzqIvI5TAAAAFQCcZsOg7lzzlDM+zPClwQyUj3r/RQAAAIBhQx/jFSDqoAY/RCemW9diJvMTHcAavAWKeNG3ieMKiFvP6z3VlAstc9jxoXRmxQ9aKy+hxd2nxWwIC5HxyrpXuAODaWPeHoI/5PV8kppVKHn6ZO0BRaX47+uljs+McPtBjEG3B9E9G29Cl6jAG8yZ5iVVUbelXKgbVQ6K/ZOzJwAAAIA4QleJhR1gWO+0JVsIp9+25cN7yGKMxHq4eMaJpapSWxoPI0ITKehIzSv+ZCvFpFdYl1HY2c2snAhLZ9Uiyepoqu7s05QKjfJmwolKSQrn/FF8/5uYe/H8p96LR6lJBBQ5c9VWCa+AYoqBNy45yUziagSYI8U0gMD2rKlrrFtPCA=="
+    ps: "ps -ef"
+    keepalived_simple_fqdns: ""
+    filesystems: "ext3,ext4,iso9660"
+    selinux_enforced: "true"
+    kernelversion: "2.6.32"
+    uptime: "8 days"
+    uptime_seconds: "691382"
+    rubyplatform: x86_64-linux
+    ipaddress__vdsmdummy_: "127.0.0.1"
+    macaddress_eth0: "00:25:64:B2:85:E5"
+    memoryfree_mb: "3179.94"
+    id: root
+    clientversion: "3.7.3"
+    selinux_current_mode: enforcing
+    netmask_rhevm: "255.255.254.0"
+    architecture: x86_64
+    uptime_hours: "192"
+    blockdevice_sdv_vendor: DGC
+    blockdevice_sdh_size: "21474836480"
+    blockdevice_sdi_size: "64424509440"
+    operatingsystemmajrelease: "6"
+    memorysize_mb: "3702.08"
+    swapfree: "15.62 GB"
+    macaddress: "2A:ED:62:66:20:F6"
+    processor0: "Intel(R) Core(TM)2 Duo CPU     E7500  @ 2.93GHz"
+    manufacturer: "Dell Inc."
+    blockdevice_sdh_model: VRAID
+    blockdevice_sdv_size: "64424509440"
+    netmask_lo: "255.0.0.0"
+    blockdevice_sdi_vendor: DGC
+    mtu__vdsmdummy_: "1500"
+    lsbdistid: RedHatEnterpriseServer
+    boardserialnumber: "..CN137409C102W4."
+    blockdevices: "sda,sdh,sdi,sdj,sdn,sdo,sdp,sdt,sdu,sdv"
+    kernelrelease: "2.6.32-431.37.1.el6.x86_64"
+    facterversion: "2.3.0"
+    macaddress__vdsmdummy_: "00:25:64:B2:85:E5"
+    sshfp_rsa: |-
+      SSHFP 1 1 bbf6f8c6422cbbe725d1bfb16fe48448483e833f
+      SSHFP 1 2 75e2c816d678fcec8fdbb65dc20bb9fc909bff49285d394062f1398536c2a33c
+    blockdevice_sdt_model: VRAID
+    blockdevice_sdi_model: VRAID
+    hardwaremodel: x86_64
+    blockdevice_sdj_model: VRAID
+    blockdevice_sdt_vendor: DGC
+    uniqueid: "230a3302"
+    blockdevice_sdp_vendor: DGC
+    interfaces: "_vdsmdummy_,bond0,eth0,lo,rhevm"
+    blockdevice_sda_vendor: ATA
+    selinux_config_mode: enforcing
+    "_timestamp": 2014-12-09 14:56:16.121496 +02:00
+  expiration: 2014-12-09 15:26:16.095679 +02:00

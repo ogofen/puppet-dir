@@ -1,0 +1,55 @@
+--- !ruby/object:Puppet::Transaction::Report
+  metrics: {}
+  logs: 
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym info
+      tags: 
+        - info
+      message: "Retrieving pluginfacts"
+      source: Puppet
+      time: 2014-12-09 14:54:03.938204 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym info
+      tags: 
+        - info
+      message: "Retrieving plugin"
+      source: Puppet
+      time: 2014-12-09 14:54:04.051353 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym info
+      tags: 
+        - info
+      message: "Loading facts"
+      source: Puppet
+      time: 2014-12-09 14:54:04.332761 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym err
+      tags: 
+        - err
+      message: "Could not retrieve catalog from remote server: Error 400 on SERVER: Fact: $puppet_vardir is missing! at /etc/puppet/modules/common/manifests/vardir.pp:22 on node dhcp-2-51.tlv.redhat.com"
+      source: Puppet
+      time: 2014-12-09 14:54:05.317864 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym warning
+      tags: 
+        - warning
+      message: "Not using cache on failed catalog"
+      source: Puppet
+      time: 2014-12-09 14:54:05.318097 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym err
+      tags: 
+        - err
+      message: "Could not retrieve catalog; skipping run"
+      source: Puppet
+      time: 2014-12-09 14:54:05.318220 +02:00
+  resource_statuses: {}
+  host: dhcp-2-51.tlv.redhat.com
+  time: 2014-12-09 14:54:03.852165 +02:00
+  kind: apply
+  report_format: 4
+  puppet_version: "3.7.3"
+  configuration_version: 
+  transaction_uuid: "5d710568-b407-4c9a-9f89-d4d1533c0d81"
+  environment: production
+  status: failed

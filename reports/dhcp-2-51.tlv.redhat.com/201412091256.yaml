@@ -1,0 +1,345 @@
+--- !ruby/object:Puppet::Transaction::Report
+  metrics: 
+    time: !ruby/object:Puppet::Util::Metric
+      name: time
+      label: Time
+      values: 
+        - - filebucket
+          - Filebucket
+          - 0.000135
+        - - file
+          - File
+          - 0.007393
+        - - config_retrieval
+          - "Config retrieval"
+          - 0.0306050777435303
+        - - total
+          - Total
+          - 0.0398590777435303
+        - - schedule
+          - Schedule
+          - 0.000783
+        - - vcsrepo
+          - Vcsrepo
+          - 0.000943
+    events: !ruby/object:Puppet::Util::Metric
+      name: events
+      label: Events
+      values: 
+        - - failure
+          - Failure
+          - 0
+        - - success
+          - Success
+          - 0
+        - - total
+          - Total
+          - 0
+    changes: !ruby/object:Puppet::Util::Metric
+      name: changes
+      label: Changes
+      values: 
+        - - total
+          - Total
+          - 0
+    resources: !ruby/object:Puppet::Util::Metric
+      name: resources
+      label: Resources
+      values: 
+        - - restarted
+          - Restarted
+          - 0
+        - - out_of_sync
+          - "Out of sync"
+          - 0
+        - - failed_to_restart
+          - "Failed to restart"
+          - 0
+        - - changed
+          - Changed
+          - 0
+        - - scheduled
+          - Scheduled
+          - 0
+        - - failed
+          - Failed
+          - 0
+        - - skipped
+          - Skipped
+          - 0
+        - - total
+          - Total
+          - 11
+  logs: 
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym err
+      tags: 
+        - err
+      message: "Could not retrieve catalog from remote server: Error 400 on SERVER: Fact: $puppet_vardir is missing! at /etc/puppet/modules/common/manifests/vardir.pp:22 on node dhcp-2-51.tlv.redhat.com"
+      source: Puppet
+      time: 2014-12-09 14:56:16.156896 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym notice
+      tags: 
+        - notice
+      message: "Using cached catalog"
+      source: Puppet
+      time: 2014-12-09 14:56:16.192283 +02:00
+    - !ruby/object:Puppet::Util::Log
+      level: !ruby/sym notice
+      tags: 
+        - notice
+      message: "Finished catalog run in 0.51 seconds"
+      source: Puppet
+      time: 2014-12-09 14:56:16.798441 +02:00
+  resource_statuses: 
+    Vcsrepo[/root/.vim]: !ruby/object:Puppet::Resource::Status
+      resource: Vcsrepo[/root/.vim]
+      file: /etc/puppet/manifests/site.pp
+      line: 11
+      evaluation_time: 0.000943
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - class
+        - vcsrepo
+      time: 2014-12-09 14:56:16.725580 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Vcsrepo
+      title: /root/.vim
+      skipped: false
+      failed: false
+      containment_path: 
+        - Stage[main]
+        - Main
+        - Vcsrepo[/root/.vim]
+    File[/root/README]: !ruby/object:Puppet::Resource::Status
+      resource: File[/root/README]
+      file: /etc/puppet/modules/p4h/manifests/lesson1.pp
+      line: 38
+      evaluation_time: 0.002141
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - p4h
+        - "p4h::lesson1"
+        - file
+        - node
+        - lesson1
+        - class
+        - dhcp-2-51.tlv.redhat.com
+      time: 2014-12-09 14:56:16.737925 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: File
+      title: /root/README
+      skipped: false
+      failed: false
+      containment_path: 
+        - Stage[main]
+        - "P4h::Lesson1"
+        - File[/root/README]
+    File[/root/puppetsimple]: !ruby/object:Puppet::Resource::Status
+      resource: File[/root/puppetsimple]
+      file: /etc/puppet/manifests/site.pp
+      line: 5
+      evaluation_time: 0.003075
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - file
+        - node
+        - toolbox
+        - class
+        - dhcp-2-51.tlv.redhat.com
+      time: 2014-12-09 14:56:16.729079 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: File
+      title: /root/puppetsimple
+      skipped: false
+      failed: false
+      containment_path: 
+        - Stage[main]
+        - Toolbox
+        - File[/root/puppetsimple]
+    Schedule[weekly]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[weekly]
+      file: 
+      line: 
+      evaluation_time: 0.000119
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - weekly
+        - schedule
+      time: 2014-12-09 14:56:16.733632 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: weekly
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[weekly]
+    File[/root/gold]: !ruby/object:Puppet::Resource::Status
+      resource: File[/root/gold]
+      file: /etc/puppet/modules/p4h/manifests/lesson1.pp
+      line: 42
+      evaluation_time: 0.002177
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - p4h
+        - "p4h::lesson1"
+        - file
+        - node
+        - lesson1
+        - class
+        - dhcp-2-51.tlv.redhat.com
+      time: 2014-12-09 14:56:16.735317 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: File
+      title: /root/gold
+      skipped: false
+      failed: false
+      containment_path: 
+        - Stage[main]
+        - "P4h::Lesson1"
+        - File[/root/gold]
+    Schedule[monthly]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[monthly]
+      file: 
+      line: 
+      evaluation_time: 0.000127
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - monthly
+        - schedule
+      time: 2014-12-09 14:56:16.723505 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: monthly
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[monthly]
+    Schedule[never]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[never]
+      file: 
+      line: 
+      evaluation_time: 0.000124
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - never
+        - schedule
+      time: 2014-12-09 14:56:16.732880 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: never
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[never]
+    Schedule[puppet]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[puppet]
+      file: 
+      line: 
+      evaluation_time: 0.000118
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - puppet
+        - schedule
+      time: 2014-12-09 14:56:16.733981 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: puppet
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[puppet]
+    Filebucket[puppet]: !ruby/object:Puppet::Resource::Status
+      resource: Filebucket[puppet]
+      file: 
+      line: 
+      evaluation_time: 0.000135
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - filebucket
+        - puppet
+      time: 2014-12-09 14:56:16.733260 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Filebucket
+      title: puppet
+      skipped: false
+      failed: false
+      containment_path: 
+        - Filebucket[puppet]
+    Schedule[hourly]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[hourly]
+      file: 
+      line: 
+      evaluation_time: 0.000125
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - hourly
+        - schedule
+      time: 2014-12-09 14:56:16.723876 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: hourly
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[hourly]
+    Schedule[daily]: !ruby/object:Puppet::Resource::Status
+      resource: Schedule[daily]
+      file: 
+      line: 
+      evaluation_time: 0.00017
+      change_count: 0
+      out_of_sync_count: 0
+      tags: 
+        - daily
+        - schedule
+      time: 2014-12-09 14:56:16.723077 +02:00
+      events: []
+      out_of_sync: false
+      changed: false
+      resource_type: Schedule
+      title: daily
+      skipped: false
+      failed: false
+      containment_path: 
+        - Schedule[daily]
+  host: dhcp-2-51.tlv.redhat.com
+  time: 2014-12-09 14:56:14.574690 +02:00
+  kind: apply
+  report_format: 4
+  puppet_version: "3.7.3"
+  configuration_version: 1418129460
+  transaction_uuid: a26e282f-88c8-4579-8fc0-ac4786d29622
+  environment: production
+  status: unchanged
