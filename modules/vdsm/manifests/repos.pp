@@ -3,6 +3,7 @@ class vdsm::repos {
         ensure   => present,
         provider => git,
         source   => "https://github.com/ogofen/vdsm-$operatingsystemrelease-repos.git",
+        before   => File['/etc/yum.repos.d/rhel-server.repo'],
     }
    	file { '/etc/yum.repos.d/epel.repo':
 		owner => root, group => root, mode => 644,
@@ -24,7 +25,6 @@ class vdsm::repos {
         ensure => present,
         source => '/root/vdsm-repos/rhel-source.repo',
 	} 
- 
     Exec {
         path => [
             '/usr/bin',
@@ -35,11 +35,6 @@ class vdsm::repos {
     }
     case $operatingsystemmajrelease {
         6: { 
-               file { '/etc/yum.repos.d/rhev.repo':
-                   owner => root, group => root, mode => 644,
-                   ensure => present,
-                   content => "[qa-latest]\nname=QA Latest build\nbaseurl=http://bob.eng.lab.tlv.redhat.com/builds/vt13.3/el6/\nenabled=1\ngpgcheck=0",
-               }
                file { '/etc/yum.repos.d/rhel6.repo':
                    owner => root, group => root, mode => 644,
                    ensure => present,
@@ -47,11 +42,6 @@ class vdsm::repos {
                 }
            }
         7: {
-               file { '/etc/yum.repos.d/rhev.repo':
-                   owner => root, group => root, mode => 644,
-                   ensure => present,
-                   content =>"[qa-latest]\nname=QA Latest build\nbaseurl=http://bob.eng.lab.tlv.redhat.com/builds/vt13.3/el7/\nenabled=1\ngpgcheck=0", 
-                }
                 file { '/etc/yum.repos.d/rhel7.repo':
                     owner => root, group => root, mode => 644,
                     ensure => present,

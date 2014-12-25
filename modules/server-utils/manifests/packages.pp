@@ -3,6 +3,10 @@ class server-utils::packages {
         ensure => installed,
         allow_virtual => false,
     }
+    package { 'git':
+        ensure => installed,
+        allow_virtual => false,
+    }
     package { 'zsh':
         ensure => installed,
         allow_virtual => false,
@@ -39,4 +43,9 @@ class server-utils::packages {
         ensure => installed,
         allow_virtual => false,
     }
+    package { 'htop':
+        ensure => installed,
+        allow_virtual => false,
+    }
+
 }
