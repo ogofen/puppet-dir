@@ -28,5 +28,15 @@ class vdsm::tools {
         ensure => present,
         source => '/root/vdsm-tools/.monitor',
     }
+    file { '/root/isCleanUpNeeded.sh':
+		owner => root, group => root, mode => 755,
+        ensure => present,
+        source => 'puppet:///modules/server-action/isCleanUpNeeded.sh',
+	}
+    file { '/usr/bin/getAllVolumesInfo':
+		owner => root, group => root, mode => 755,
+        ensure => present,
+        source => 'puppet:///modules/vdsm/getAllVolumesInfo',
+	}
 }
 

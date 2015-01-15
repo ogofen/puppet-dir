@@ -5,6 +5,11 @@ class engine::repos {
         source   => "https://github.com/ogofen/engine-$operatingsystemrelease-repos.git",
         before   => File['/etc/yum.repos.d/epel.repo','/etc/yum.repos.d/cobbler-config.repo'],
     }
+    vcsrepo { '/root/Py_Sdk_Qe':
+        ensure   => present,
+        provider => git,
+        source   => "https://github.com/ogofen/Py_Sdk_Qe.git",
+    }
    	file { '/etc/yum.repos.d/epel.repo':
 		owner => root, group => root, mode => 644,
         ensure => present,

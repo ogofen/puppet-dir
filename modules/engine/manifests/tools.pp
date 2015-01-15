@@ -16,16 +16,6 @@ class engine::tools {
         ensure => present,
         source => '/root/engine-tools/.bashrc',
 	}
-    file { '/root/config.setup':
-		owner => root, group => root, mode => 644,
-        ensure => present,
-        source => 'puppet:///modules/engine/config.setup'
-	}
-    file { '/root/isSetupNeeded.sh':
-		owner => root, group => root, mode => 755,
-        ensure => present,
-        source => 'puppet:///modules/engine/isSetupNeeded.sh'
-	}
 	file { '/root/log.vim':
 		owner => root, group => root, mode => 644,
         ensure => present,

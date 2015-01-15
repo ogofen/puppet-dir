@@ -200,10 +200,12 @@ set completeopt=menu,longest
 hi Visual  guifg=#000000 guibg=white gui=none ctermfg=white
 hi MatchParen ctermbg=none ctermfg=red
 set statusline+=%F
-hi TabLine ctermfg=yellow ctermbg=blue
-hi TabLineSel ctermfg=yellow ctermbg=white
+hi TabLine ctermfg=white ctermbg=blue
+hi TabLineSel ctermfg=blue ctermbg=white
 nmap > :call EasyMotionWB(0 ,0)<cr>
 nmap < :call EasyMotionWB(0 ,1)<cr>
 set cursorline
 hi Cursorline ctermbg=darkblue
 hi Visual ctermbg=green
+vmap <cr> y
+nmap ; jjj
